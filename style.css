@@ -1,0 +1,101 @@
+* {
+  outline: 1 px dashed-orange;
+}
+
+
+body {
+  font-family: helvetica;
+}
+
+a {
+  text-decoration: none;
+  color: #919191;
+}
+
+header {
+  background-color:#505050;
+  height: 100px;
+}
+
+.inner {
+width: 1000px;
+margin: 0 auto;
+}
+
+header img {
+  float: left;
+  margin-top: 15px;
+  margin-right: 30px;
+}
+
+header ul li{
+  display: inline-block; /*Allows all the list items to be maniulated individually*/
+  margin-top: 40px;
+  margin-right: 75px;
+}
+
+main {
+  width: 960px;
+  margin: 30px auto;/*in this case, 30px refers to the  top and bottom margins while auto refers to the left and right margins*/
+}
+
+.sub_banners li{
+  display: inline-block;
+  float: left;
+  margin: 20px 3px 20px 3px;
+}
+
+.sub_banners li:last-child {
+  margin-right: 0px;
+}
+
+.featured_section img{
+  float: left;
+  width: 50%;
+}
+
+.right {
+  width: calc(50% - 30px);
+  float: right;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.right p {
+  height: 320px;
+  overflow: auto;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+button {
+  border: none;
+  padding: 10px 30px;
+  background: #000000;
+  color: #FFFFFF;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: 350ms all;
+  cursor: pointer;
+}
+
+button:hover {
+  background: green;
+}
+
+footer {
+  clear: both; /*keeps it from being affected by anything that has a float attribute above it*/
+  background-color:#505050;
+  height: 100px;
+}
+
+@media(min-width:600;){
+  
+}
