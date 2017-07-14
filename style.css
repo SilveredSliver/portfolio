@@ -2,18 +2,6 @@
   outline: 1 px dashed-orange;
 }*/
 
-
-#textDiv span{
-  color: orange;
-  /*margin-bottom: 3%;*/
-  /*display: inline-block;*/
-  /*position:relative;*/
-  /*top:20px;*/
-  visibility:hidden;
-  /*font-size:36px;*/
-  -webkit-font-smoothing:antialiased;
-}
-
 body {
   font-family: helvetica;
 }
@@ -122,37 +110,4 @@ footer {
 
 @media(min-width:600;){
 
-}
-
-
-
-
-/*new test background*/
-
-#canvas {
-position: fixed;
-z-index: -1;
-top: 0;
-left: 0;
-}
-
-#container {
-max-width: 960px;
-width: 90%;
-height: auto;
-margin: 0 auto 1em;
-}
-
-.title {
-color: #fff;
-font-family: 'Lobster', cursive;
-font-size: 3.5em;
-text-align: center;
-}
-
-.content {
-width: 100%;
-background-color: rgba(255,255,255,.9);
-padding: 0.1em 1em;
-font-family: 'Open Sans', sans-serif;
 }

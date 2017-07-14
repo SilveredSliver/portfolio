@@ -1,0 +1,42 @@
+/*START of jquery css for text animations*/
+#textDiv span{
+  color: orange;
+  /*margin-bottom: 3%;*/
+  /*display: inline-block;*/
+  /*position:relative;*/
+  /*top:20px;*/
+  visibility:hidden;
+  /*font-size:36px;*/
+  -webkit-font-smoothing:antialiased;
+}
+/*END of jquery css for text animations*/
+
+/*START for jquery css for background*/
+#canvas {
+position: fixed;
+z-index: -1;
+top: 0;
+left: 0;
+}
+
+#container {
+max-width: 960px;
+width: 90%;
+height: auto;
+margin: 0 auto 1em;
+}
+
+.title {
+color: #fff;
+font-family: 'Lobster', cursive;
+font-size: 3.5em;
+text-align: center;
+}
+
+.content {
+width: 100%;
+background-color: rgba(255,255,255,.9);
+padding: 0.1em 1em;
+font-family: 'Open Sans', sans-serif;
+}
+/*END jquery css for background animation*/
