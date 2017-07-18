@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.0/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ocanvas/2.8.10/ocanvas.min.js"></script>
+    <script id="article-template" type="text/x-handlebars-template"></script>
     <link rel="stylesheet" href="icons.css">
   </head>
   <body>
@@ -27,9 +28,9 @@
       </div>
     </header>
     <main>
-      <h1 id="textDiv">THIS THING FADES LEFT TO RIGHT</h1>
+      <h1 id="textDiv">{{headTitle}}</h1>
       <img src="https://media.giphy.com/media/NXTDwmhiFNUFG/giphy.gif" width="960" height="450"/>
-      <p class="projects">PROJECTS</p>
+      <p class="projects">{{projectsTitle}}</p>
       <ul class="sub_banners">
         <li><img src="http://www.seriouseats.com/recipes/assets_c/2016/08/20160826-sous-vide-salmon-46-thumb-1500xauto-433927.jpg" width="300" height="350"/></li>
         <li><img src="https://ptcblogs.files.wordpress.com/2014/04/the-uncomfortable-watering-can2.png" width="300" height="350"/></li>
@@ -38,9 +39,11 @@
       <section class="featured_section">
         <img src="https://ca.slack-edge.com/T039KG69K-U4T5VC5JQ-61e1d5f9039c-1024" width="450" height="450"/>
         <div class="right">
-          <h2>About Me</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus expedita beatae repudiandae, harum voluptate maiores doloribus excepturi numquam consequatur recusandae sapiente incidunt voluptates voluptatibus cum, ea, non itaque provident sed! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe sed voluptatem dolor sequi obcaecati assumenda esse incidunt? In fugit dicta, minima expedita doloremque similique, et voluptate hic deleniti labore excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium qui blanditiis illum, nesciunt odit, facilis magni corporis voluptatem mollitia doloremque ad harum dolorem voluptas officia. Explicabo reprehenderit sapiente nobis voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <button>Subscribe!</button>
+          <h2>{{bioTitle}}</h2>
+          <p>{{bioText}}</p>
+          <label>
+            <button>placeholderForLogo</button>
+          </label>
         </div>
       </section>
     </main>
@@ -49,17 +52,17 @@
     <div id="container">
       <h1 class="title">Leave a comment below!</h1>
       <div class="content">
-        <label>Visitor Comment<input type="text" id="visitorText"  placeholder="Input Text Here"/></label>
+        <label>Visitor Comment:<input type="text" id="visitorText"  placeholder="Input Text Here"/></label>
 
-        <label>Date Submitted<input type="text" id="visitorDate"  placeholder="Input Date Here"/></label>
+        <label>Date Submitted:<input type="text" id="visitorDate"  placeholder="Input Date Here"/></label>
 
-        <label>Visitor Name<input type="text" id="vistorName"  placeholder="Input Name Here"/></label>
-
+        <label>Visitor Name:<input type="text" id="vistorName"  placeholder="Input Name Here"/></label>
       </div>
     </div>
     <!--END for test background-->
     <script src="index.js"></script>
     <script src="app.js"></script>
+    <script>Article.fetchAll()</script>
   </body>
 <footer>
 </footer>
