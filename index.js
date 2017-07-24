@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
 
   var windowXArray = [],
     windowYArray = [];
-
+//Make your for loops into a forEach.
   for (var i = 0; i < $(window).innerWidth(); i++) {
     windowXArray.push(i);
   }
